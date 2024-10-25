@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=itcall
+Comment=A new Flutter project.
+Icon=ru.riklem.itcall
+Exec=/usr/bin/ru.riklem.itcall
+X-Nemo-Application-Type=silica-qt5
+
+[X-Application]
+Permissions=
+OrganizationName=ru.riklem
+ApplicationName=itcall
