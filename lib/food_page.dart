@@ -54,11 +54,11 @@ Future<int> EditDialog(context, name, hint) async {
             Expanded(
               child: OutlinedButton(
                   style: ButtonStyle(
-                    shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
-                    fixedSize: const WidgetStatePropertyAll(Size(220, 40)),
-                    side: WidgetStatePropertyAll(BorderSide(color: Colors.black , width: 1.5)),
-                    backgroundColor: WidgetStateColor.transparent,
-                    overlayColor: const WidgetStatePropertyAll(Color(0x1AFF0000)),
+                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
+                    fixedSize: const MaterialStatePropertyAll(Size(220, 40)),
+                    side: MaterialStatePropertyAll(BorderSide(color: Colors.black , width: 1.5)),
+                    backgroundColor: MaterialStatePropertyAll(Colors.transparent),
+                    overlayColor: const MaterialStatePropertyAll(Color(0x1AFF0000)),
                   ),
 
                   onPressed: () {
@@ -73,9 +73,9 @@ Future<int> EditDialog(context, name, hint) async {
             Expanded(
               child: ElevatedButton(
                   style: ButtonStyle(
-                    shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
-                    fixedSize: const WidgetStatePropertyAll(Size(220, 40)),
-                    backgroundColor: WidgetStatePropertyAll(Colors.black),
+                    shape: MaterialStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(15))),
+                    fixedSize: const MaterialStatePropertyAll(Size(220, 40)),
+                    backgroundColor: MaterialStatePropertyAll(Colors.black),
                   ),
                   onPressed: () {
                     value = int.parse(textController.text).round();
@@ -221,7 +221,7 @@ class _FoodScreenState extends State<FoodScreen> {
                     fit: BoxFit.fitWidth,
                     image: image== null
                         ? const AssetImage("assets/images/noimage.png")
-                        : FileImage(File(image!.path))),
+                        : FileImage(File(image!.path)) as ImageProvider),
               ),
             ),
 

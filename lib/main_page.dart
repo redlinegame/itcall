@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:itcall/buttons/add_button.dart';
-import 'package:sqlite3/sqlite3.dart' as sql;
 
 import 'day_page.dart';
 
@@ -22,7 +21,7 @@ class _MainActivityState extends State<MainActivity> {
     {"dayNumber": 6,"number": 1},
     {"dayNumber": 7,"number": 1},
   ];
-
+/*
   void _createTables() {
     final db = sql.sqlite3.openInMemory();
     db.execute('''
@@ -120,7 +119,7 @@ class _MainActivityState extends State<MainActivity> {
       print('Artist[id: ${row['id']}, name: ${row['name']}]');
     }
     db.dispose();
-  }
+  }*/
 
   void _addDay(dayNum) {
     int _num = _itemsMaps.where((item)=> item["dayNumber"] == dayNum).toList().length + 1;
@@ -159,8 +158,6 @@ class _MainActivityState extends State<MainActivity> {
                 tooltip: 'Редактировать',
                 onPressed: () {
                   // handle the press
-
-                  _createTables();
                 },
               ),
             ),

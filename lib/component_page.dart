@@ -319,7 +319,7 @@ class _ComponentCardState extends State<ComponentCard> {
                           width: MediaQuery.of(context).size.width,
                           child: ElevatedButton(
                             style: ButtonStyle(
-                              backgroundColor: WidgetStatePropertyAll(Color(0xFFCB3030)),
+                              backgroundColor: MaterialStatePropertyAll(Color(0xFFCB3030)),
                             ),
                             onPressed: () {
                               _deleteMap(_index);
