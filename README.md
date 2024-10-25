@@ -1,16 +1,16 @@
 # itcall
 
-A new Flutter project.
+Данный проект представляет из себя приложение для формирования планового приёма пищи, а также записи внеплановых приёмов пищи в какой-либо день.
 
-## Getting Started
+Данное приложение состоит из 6 экранов:
+1) Главный экран - содержит карточки дней и кнопку для их создания.
+2) Экран приёмов пищи - содержит карточки приёмов пищи, а также кнопку для перехода на экран истории приёмов пищи.
+2.1) Экран истории приёмов пищи - содержит поля для ввода блюд и их веса.
+3) Экран приёма пищи - содержит название приёма и блюда, с возможностью их добавления.
+4) Экран блюда - содержит фото, название, общее количество калорий, а также состав(ингредиенты).
+5) Экран ингредиентов - хранит в себе карточки ингредиентов, в которых указывается их состав калорий на 100гр. данного продукта.
 
-This project is a starting point for a Flutter application.
+В связи с труднореализуемой установкой и взаимодействием с ОС Аврора, проект был изначально собран для платформы Андроид, и тестирование на ОС Аврора НЕ проводилось. 
+(Плагины были переписаны под ОС Аврора).
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Демонстрационное видео доступно в главном каталоге под названием DEMO.mp4
